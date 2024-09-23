@@ -1,0 +1,470 @@
+* {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 1em;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(184, 125, 75, 0.7)), to(rgba(184, 125, 75, 0.7))), url(../Img/background.png);
+  background: linear-gradient(rgba(184, 125, 75, 0.7), rgba(184, 125, 75, 0.7)), url(../Img/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center 0;
+}
+
+header .container {
+  position: relative;
+  height: 600px;
+}
+
+header .container .menu {
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  padding: 40px 0;
+  position: relative;
+  right: 10%;
+}
+
+header .container .menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 12px;
+  font-family: 'Merriweather', serif;
+  display: inline-block;
+  position: relative;
+}
+
+header .container .menu a:hover {
+  text-decoration: underline;
+}
+
+header .container .menu a:active {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+header .container .texts {
+  text-align: left;
+  margin: 15% 10% 0 10%;
+  padding: 0;
+  position: absolute;
+}
+
+header .container .texts .nameRest {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 4em;
+}
+
+header .container .texts .nameRest span {
+  font-weight: normal;
+  font-size: .7em;
+}
+
+header .container .texts h3 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.5em;
+  margin-top: -30px;
+}
+
+body .main {
+  background: url(../Img/texture.png);
+  background-repeat: repeat;
+}
+
+body .main .about_us .container {
+  overflow: visible;
+  position: relative;
+}
+
+body .main .about_us .container .photo_about {
+  width: 80%;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  z-index: 0;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+body .main .about_us .container .photo_about img {
+  width: 100%;
+  vertical-align: top;
+}
+
+body .main .about_us .container article {
+  background: #fff;
+  padding: 48px;
+  width: 50%;
+  position: relative;
+  top: 400px;
+  z-index: 1;
+  float: right;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+body .main .about_us .container article h3 {
+  font-size: 4.16em;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+body .main .about_us .container article p {
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+body .main .menu_food {
+  padding-top: 570px;
+  margin-bottom: 50px;
+}
+
+body .main .menu_food .container {
+  width: 90%;
+}
+
+body .main .menu_food .container .title_menu {
+  margin: 0;
+  font-size: 3.3em;
+  font-weight: 300;
+  text-align: center;
+}
+
+body .main .menu_food .container .container_menu, body .main .menu_food .container .container_menu .container_menu_2 {
+  border: 1px solid #000000;
+  background: transparent;
+  padding: 10px;
+  overflow: hidden;
+}
+
+body .main .menu_food .container .container_menu .container_menu_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main .menu_food .container .container_menu .container_menu_2 article {
+  width: 50%;
+  text-align: justify;
+  margin: 1%;
+}
+
+body .main .menu_food .container .container_menu .container_menu_2 article .category {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+body .main .menu_food .container .container_menu .container_menu_2 article .saucer {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 4px dotted #000000;
+  overflow: hidden;
+  height: 100px;
+}
+
+body .main .menu_food .container .container_menu .container_menu_2 article .saucer .name {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  float: left;
+}
+
+body .main .menu_food .container .container_menu .container_menu_2 article .saucer .price {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  float: right;
+}
+
+body .main .menu_food .container .container_menu .container_menu_2 article .saucer .description {
+  font-size: 1.3em;
+  color: #676767;
+  clear: both;
+}
+
+body .main .gallery_img {
+  overflow: hidden;
+}
+
+body .main .gallery_img .photo_gallery {
+  width: 25%;
+  height: 480px;
+  float: left;
+}
+
+body .main .gallery_img .photo_gallery img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  opacity: .6;
+}
+
+body .main .gallery_img .photo_gallery img:hover {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+body .main .ubication_com {
+  background: #fff;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+body .main .ubication_com .container .title {
+  text-align: center;
+  font-size: 3.3em;
+  line-height: 40px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+body .main .ubication_com .container .direction {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+body .main .ubication_com .container .direction h4 {
+  font-weight: bold;
+  font-size: 1.7em;
+  margin-bottom: 40px;
+}
+
+body .main .ubication_com .container .direction .street {
+  width: 50%;
+  float: left;
+}
+
+body .main .ubication_com .container .direction .phone, body .main .ubication_com .container .direction .mail {
+  width: 50%;
+  float: left;
+}
+
+body .main .ubication_com .container .direction p {
+  font-size: 1.3em;
+}
+
+body .main .ubication_com .container .schedule {
+  width: 50%;
+  float: right;
+  text-align: right;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+body .main .ubication_com .container .schedule h4 {
+  font-weight: bold;
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body .main .ubication_com .container .schedule .weekday {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-weight: normal;
+}
+
+body .main .ubication_com .container .schedule .weekend {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+body .main .ubication_com .container .schedule p {
+  font-size: 1.3em;
+}
+
+body .main .section_map {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+body .main .section_map iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+}
+
+body footer {
+  background: #223843;
+}
+
+body footer .copyright {
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
+}
+
+body footer .copyright p {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  body header .container {
+    position: static;
+    height: 400px;
+  }
+  body header .container .menu {
+    text-align: center;
+    right: 0;
+    background: #fff;
+    position: fixed;
+    z-index: 2;
+  }
+  body header .container .menu a {
+    color: #7a4909;
+  }
+  body header .container .texts {
+    position: static;
+    margin: 25% auto;
+  }
+  body .main .about_us .container {
+    width: 90%;
+  }
+  body .main .about_us .container .photo_about {
+    width: 100%;
+    position: relative;
+  }
+  body .main .about_us .container article {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    top: -50px;
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+  body .main .about_us .container article h3 {
+    margin: 5%;
+  }
+  body .main .about_us .container article p {
+    margin: 5%;
+  }
+  body .main .menu_food {
+    padding-top: 300px;
+  }
+  body .main .gallery_img .photo_gallery {
+    height: 160px;
+  }
+  body .main .gallery_img .photo_gallery img {
+    height: 100%;
+  }
+  body .main .section_map {
+    width: 100%;
+    margin: auto;
+    background: #f3f4f7;
+    text-align: center;
+  }
+  body .main .section_map iframe {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body header .container {
+    position: static;
+    height: 400px;
+  }
+  body header .container .menu {
+    text-align: center;
+    right: 0;
+    background: #fff;
+  }
+  body header .container .menu a {
+    font-size: 1em;
+  }
+  body header .container .texts {
+    position: static;
+    margin: 50% auto;
+    font-size: .650em;
+  }
+  body header .container .texts h3 {
+    margin-top: 0;
+  }
+  body .main .about_us .container {
+    width: 90%;
+  }
+  body .main .about_us .container .photo_about {
+    width: 100%;
+    position: relative;
+  }
+  body .main .about_us .container article {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    top: -50px;
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+  body .main .about_us .container article h3 {
+    font-size: 3em;
+  }
+  body .main .about_us .container article p {
+    margin: 5%;
+  }
+  body .main .menu_food {
+    padding-top: 300px;
+  }
+  body .main .menu_food .container .container_menu .container_menu_2 {
+    display: block;
+  }
+  body .main .menu_food .container .container_menu .container_menu_2 article {
+    width: 100%;
+  }
+  body .main .gallery_img .photo_gallery {
+    width: 50%;
+    height: 200px;
+  }
+  body .main .gallery_img .photo_gallery img {
+    height: 100%;
+  }
+  body .main .ubication_com .container .direction {
+    width: 100%;
+  }
+  body .main .ubication_com .container .schedule {
+    margin-top: 40px;
+    width: 100%;
+  }
+  body .main .section_map {
+    width: 100%;
+    margin: auto;
+    background: #f3f4f7;
+    text-align: center;
+  }
+  body .main .section_map iframe {
+    width: 80%;
+    height: 250px;
+  }
+  body footer .container .copyright p {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
